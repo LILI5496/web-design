@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    text-align: center;
+}
+.container{
+    margin: auto;
+}
+#big-image{
+    width: 100%;
+}
+.logo{
+    background: #000;
+}
+.logo  li{
+    display: inline-block;
+    padding: 15px 23px;
+    text-align: center;
+}
+.apple{
+    display: none;
+    padding: 15px 30px;
+    text-align: center;
+    background: #000;
+    color: white;
+    cursor: pointer;
+}
+
+#menu li a{
+    color: white;
+    cursor: pointer;
+}
+.four{
+    display:-webkit-box;
+    display:-moz-box;
+
+
+    width:100%;
+    margin:0;
+}
+.four li img{
+    display: block;
+    height: 200px;
+    background-position:center center ;
+
+}
+.toggle-btn{
+    display: none;
+    font-size: 20px;
+    background: #000000;
+    color: white;
+    padding:7px 10px;
+    position: absolute;
+    left: 5px;
+    top:5px;
+}
+@media(max-width: 768px) {
+    .container{
+        width: 100%;
+    }
+    #nav{
+        display: none;
+    }
+    .apple{
+        display: block;
+    }
+    .toggle-btn{
+        display: block;
+    }
+    #nav .close{
+        display: none;
+    }
+    #nav:target {
+        display: block;
+        position: absolute;
+        left: 0;
+        top:50px;
+        width: 100%;
+        height: 100%;
+    }
+    #nav:target ul{
+        background: #000000;
+        height: 100%;
+    }
+    #nav:target li,#nav:target li a{
+        display: block;
+        text-align: left;
+
+
+    }
+    #nav:target li a{
+        padding: 5px;
+        border-bottom: 1px solid #eee;
+    }
+    #nav:target li a:hover{
+
+    }
+    #nav:target .active{
+        background: #272727;
+    }
+    #nav:target .close{
+        display: block;
+        top:-50px
+    }
+
+}
